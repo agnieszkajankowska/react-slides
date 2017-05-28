@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<img src="img/logo.svg" class="react-logo"/>
+			<div class="slides">
+				<section>
+					<h1>React</h1>
+					<p>an open-source JavaScript library for building user interfaces</p>
+				</section>
+				<section>
+					<h1>Why React?</h1>
+					<ul>
+						<li>Component structure</li>
+						<li>React makes use of the latest and greatest JavaScript features</li>
+						<li>Virtual DOM</li>
+						<li>Can be rendered on client's side</li>
+						<li>JSX - XML-like syntax extension to ECMAScript</li>
+					</ul>
+				</section>
+				<section>
+					<h1>Virtual DOM</h1>
+					<img src="img/virtual%20dom.jpg"/>
+				</section>
+				<section>
+					<img src="img/JSX.png"/>
+				</section>
+				<section>
+					<h1>Create React App</h1>
+				</section>
+				<section>
+					<h1>Webpack</h1>
+					<img src="img/webpack.png"/>
+				</section>
+				<section>
+					<h1>Lifecycle methods</h1>
+					<img src="img/lifecycle.png"/>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
